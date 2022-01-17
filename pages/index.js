@@ -1,4 +1,3 @@
-import SEO from "../components/seo";
 import DigitalSignages from "../components/DigitalSignages";
 import Menu from "../components/Menu";
 import { getMenuData_One, getMenuData_Two, getEvents_One, getEvents_Two } from "../utils/services";
@@ -7,7 +6,6 @@ import DagensMenu from "../components/Menu/dagensMenu";
 export default function Home({menus, events}) {
   return (
     <div>
-      <SEO />
       {/* <DigitalSignages events={events} /> */}
       <Menu menus={menus} />
       {/* <DagensMenu menu={menus.menuOne || {}} /> */}
