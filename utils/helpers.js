@@ -15,13 +15,11 @@ export const createMenusArray = (menus) => {
   menus.menuOne.forEach((menu) => {
     if (menu.categories && Boolean(menu.categories.length)) {
       newMenusArray.push(menu);
-      newMenusArray.push(menu);
     }
   });
 
   menus.menuTwo.forEach((menu) => {
     if (menu.categories && Boolean(menu.categories.length)) {
-      newMenusArray.push(menu);
       newMenusArray.push(menu);
     }
   });
