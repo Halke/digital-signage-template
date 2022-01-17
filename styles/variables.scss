@@ -1,0 +1,53 @@
+$black: #080809;
+$primary: #caab2a;
+$dark: $black;
+
+$background: $black;
+$text: #fff;
+$text-strong: #fff;
+
+$navbar-background-color: rgba(#fff, 0);
+$body-background-color: $background;
+$box-background-color: rgba(#fff, 0);
+$modal-background-background-color: $black;
+
+$dropdown-content-background-color: $primary;
+$dropdown-menu-min-width: 248px;
+$dropdown-content-padding-bottom: 8px;
+$dropdown-content-padding-top: 8px;
+
+$family-primary: "Libre Caslon Text", serif;
+$family-secondary: "IBM Plex Sans", sans-serif;
+
+$size-1: 88px;
+$size-2: 48px;
+$size-3: 38px;
+$size-4: 24px;
+$size-5: 14px;
+$size-6: 12px;
+
+$container-max-width: 1344px;
+
+$box-shadow: none;
+
+$button-padding-horizontal: 12px;
+$button-padding-vertical: 12px;
+$button-border-width: 0;
+$button-focus-box-shadow-size: 0;
+
+$card-background-color: #1d1d1f;
+$card-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+$card-radius: 0;
+$card-header-color: $primary;
+$card-header-shadow: 0;
+$card-header-weight: 700;
+$card-header-padding: 16px 20px;
+$card-content-padding: $card-header-padding;
+$card-footer-padding: $card-header-padding;
+
+$input-color: #041837;
+$input-radius: 0;
+
+$horizontal-breakpoint: 3840px;
+$vertical-breakpoint: 2160px;
+

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Libre+Caslon+Text:wght@400;700&display=swap");
+
+@import "./variables.scss";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+@import "../node_modules/bulma/bulma.sass";
+
+@import "./digital-signages";
+
+@import "./menu";
+
+
+html, body {
+    // height: 3840px;
+    overflow: hidden;
+}

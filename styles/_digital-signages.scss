@@ -1,0 +1,206 @@
+@import "./variables.scss";
+
+.signage {
+  height: 3840px;
+  width: 2160px;
+  background-color: $black;
+  overflow: hidden;
+
+  @media only screen and (min-width: $horizontal-breakpoint) {
+    height: 2160px;
+    width: 3840px;
+  }
+
+  .title.is-1 {
+    font-size: 96px;
+  }
+
+  .caption {
+    font-family: $family-secondary;
+    font-size: 56px;
+    line-height: 200%;
+    color: #fff;
+
+    @media only screen and (min-width: $horizontal-breakpoint) {
+      font-size: 48px;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: $black;
+
+    .logo {
+      height: 150px;
+    }
+  }
+
+  &-content {
+    background-color: #1d1d1f;
+  }
+
+  .signage-vertical-heading {
+    @media only screen and (min-width: $horizontal-breakpoint) {
+      display: none;
+    }
+  }
+
+  .signage-horizontal-heading {
+    @media only screen and (max-width: calc($horizontal-breakpoint - 1px)) {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: $horizontal-breakpoint) {
+    &.signage-horizontal {
+      display: flex;
+    }
+  }
+}
+
+.signage-product {
+  &-image {
+    width: 100%;
+    height: 1640px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-content {
+    height: 1640px;
+    padding: 160px 200px 100px 200px;
+    position: relative;
+
+    &-header {
+      margin-bottom: 80px;
+
+      .title {
+        margin-bottom: 48px;
+      }
+
+      &-date {
+        display: flex;
+        align-items: center;
+
+        .date-tag {
+          background-color: $primary;
+          font-size: 54px;
+          padding: 22px 48px;
+          font-family: $family-secondary;
+          color: $black;
+          font-weight: 700;
+          margin-right: 55px;
+          line-height: 70px;
+        }
+
+        .time {
+          font-family: $family-secondary;
+          font-size: 70px;
+          font-weight: 700;
+
+          &-icon {
+            position: relative;
+            top: 14px;
+            img {
+              width: 72px;
+              height: 72px;
+            }
+          }
+        }
+      }
+    }
+
+    &-decor {
+      bottom: 100px;
+      height: 45px;
+      width: 500px;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin-top: 70px;
+    }
+  }
+
+  @media only screen and (min-width: $horizontal-breakpoint) {
+    &-content {
+      height: 1510px;
+      padding: 200px 120px 0;
+
+      &-header {
+        margin-bottom: 80px;
+
+        .title {
+          margin-bottom: 48px;
+        }
+
+        &-date {
+          .date-tag {
+            font-size: 48px;
+            padding: 19px 42px;
+            margin-right: 48px;
+          }
+
+          .time {
+            font-size: 60px;
+            &-icon {
+              img {
+                width: 62px;
+                height: 62px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-footer {
+      a {
+        margin-top: 120px;
+      }
+    }
+
+    &-image {
+      height: 100%;
+      width: 1920px !important;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-content-container {
+      width: 50%;
+    }
+  }
+}
+
+.button.guestie {
+  padding: 40px 50px;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: $black;
+  border: 2.5px solid $primary;
+  font-size: 48px;
+  font-family: $family-secondary;
+  font-weight: 700;
+  height: 110px;
+}
